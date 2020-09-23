@@ -17,13 +17,13 @@ inquirer.prompt([
      name: "description",
      message: "Please provide a description of your project"},
     {type: "input",
-     name: "table-of-contents",
-     message: "Please provide your table of contents separated by commas"},
+     name: "username",
+     message: "Please provide your github username"},
     {type: "input",
-     name: "installation-instructions",
+     name: "installation",
      message: "Please provide installation instructions in order separated by commas"},
     {type: "input",
-     name: "sage",
+     name: "usage",
      message: "Please provide usage criteria for your project"},
     {type: "list",
      name: "license",
@@ -44,7 +44,7 @@ inquirer.prompt([
     fs.writeFile("generator.md", radReadMe, err => {
         if (err) throw err;
         console.log("peep that RAD README!");
-    })
+    });
 })
 
 // function to write README file

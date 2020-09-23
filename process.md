@@ -35,13 +35,15 @@ Criteria
 
     License: when I choose a license from a list of options, a license is added near the top of the README
              a noticed is added to the license section of the readme that explains which license the application is covered under
+
+             badge
     
     Contribution Guidelines: This is where the user's content goes
     Test Instructions: This is where the user's content goes
     
     Questions:  Github username response provides a link to a users Github profile in the questions section
                 Email response provides an email address that is added to this section  with instructions on how to follow up
-                "for questions contact, 'blah blah' "
+                "for questions contact, 'blah blah'"
 
 5. README uses Table of Content linking to appropriate sections of the page
 

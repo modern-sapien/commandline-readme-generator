@@ -5,26 +5,31 @@ function generateMarkdown(data) {
 ## Description
 ${data.description}
 
-## Table of Contents
-${data.table}
+# Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#Usage)
+* [Contributions](#contributions)
+* [Tests](#testing)
+* [Questions](#questions)
 
-## Installation Steps
-${data.installation}
+## Installation
+${data.install}
 
-## Notes on Usage
+## Usage
 ${data.usage}
 
-## Licensing Information
+## License
 ${data.license}
 
 ## How to Contribute
-${data.contributing}
+Please reach out to ${data.username} at 
 
 ## How to Test
 ${data.tests}
 
 ## Question? 
-${data.questions}
+For Questions please contact, ${data.questions}
   
 `;
 }
