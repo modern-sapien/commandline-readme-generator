@@ -23,7 +23,22 @@ inquirer.prompt([
     {type: "input",
      name: "Usage",
      message: "Please provide usage criteria for your project"},
-])
+    {type: "list",
+     name: "License",
+     message: "Please provide the license, if any your project is using",
+     choices: ["mit", "no license", "other license information"]   },
+    {type: "input",
+     name: "Contributing",
+     message: "Please provide how others may go about contributing to this project:"},
+    {type: "input",
+     name: "Tests",
+     message: "Please provide how may test this project:"},
+    {type: "input",
+     name: "Questions",
+     message: "Please provide your email address asssociated with this project:"}, 
+]).then(answers => {
+    console.log(answers)
+})
 
 // function to write README file
 function writeToFile(fileName, data) {
