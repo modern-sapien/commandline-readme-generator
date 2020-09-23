@@ -40,7 +40,8 @@ inquirer.prompt([
      message: "Please provide your email address asssociated with this project:"}, 
 ]).then(answers => {
     console.log(answers);
-    fs.writeFile("generator.md", answers, err => {
+    var radReadMe = generateMarkdown(answers); 
+    fs.writeFile("generator.md", radReadMe, err => {
         if (err) throw err;
         console.log("peep that RAD README!");
     })
