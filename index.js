@@ -1,43 +1,45 @@
 const fs = require("fs");
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown.js')
+
 
 
 
 // array of questions for user
-// const questions = [
-// ];
+const questions = [
+];
 
 inquirer.prompt([
     {type: "input",
      name: "title",
      message: "What is the title of your project?"},
     {type: "input",
-     name: "Description",
+     name: "description",
      message: "Please provide a description of your project"},
     {type: "input",
-     name: "Table of Contents",
+     name: "table of Contents",
      message: "Please provide your table of contents separated by commas"},
     {type: "input",
-     name: "Installation Instructions",
+     name: "installation Instructions",
      message: "Please provide installation instructions in order separated by commas"},
     {type: "input",
      name: "Usage",
      message: "Please provide usage criteria for your project"},
     {type: "list",
-     name: "License",
+     name: "license",
      message: "Please provide the license, if any your project is using",
      choices: ["mit", "no license", "other license information"]   },
     {type: "input",
-     name: "Contributing",
+     name: "contributing",
      message: "Please provide how others may go about contributing to this project:"},
     {type: "input",
-     name: "Tests",
+     name: "tests",
      message: "Please provide how may test this project:"},
     {type: "input",
-     name: "Questions",
+     name: "questions",
      message: "Please provide your email address asssociated with this project:"}, 
 ]).then(answers => {
-    console.log(answers)
+    console.log(answers);
 })
 
 // function to write README file
