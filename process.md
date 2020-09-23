@@ -46,4 +46,12 @@ Criteria
 5. README uses Table of Content linking to appropriate sections of the page
 
 
+## Understanding
+
+index.js file will be linked to .fs & .inquirer
+
+I will create a prompt of questions that take user input and modify it, so that it generates a README based on their feedback.
+
+
+
 
