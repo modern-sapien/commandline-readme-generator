@@ -8,12 +8,12 @@ function generateMarkdown(data) {
 ${data.description}
 
 # Table of Contents
- [Description](#Description)
- [Installation](#Installation)
- [Usage](#Usage)
- [Contributions](#Contribute)
- [Tests](#Tests)
- [Questions](#questions)
+* [Description](#Description)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Contributions](#Contribute)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
 ## Installation
 ${data.installation}
@@ -23,16 +23,16 @@ ${data.usage}
 
 ## License
 This project is licensed by, ${data.license} for more information regarding licensing feel free to visit
-
+[choose a license](https://choosealicense.com/)
 
 ## Contribute
-Please reach out to ${data.username} at 
+Please reach out to ${data.username} at ${data.questions}.
 
 ## Tests
 ${data.tests}
 
 ## Questions 
-For Questions please contact, ${data.questions}
+For Questions please contact, ${data.fullname} at ${data.questions}.
   
 `;
 }
