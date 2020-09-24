@@ -2,9 +2,6 @@ const fs = require("fs");
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
-
-
-
 // array of questions for user
 const questions = [
 ];
@@ -28,7 +25,7 @@ inquirer.prompt([
     {type: "list",
      name: "license",
      message: "Please provide the license, if any your project is using",
-     choices: ["mit", "no license", "other license information"]   },
+     choices: ["MIT", "GNU", "APM", "NPM", "GitHub", "CPAN"]   },
     {type: "input",
      name: "contributing",
      message: "Please provide how others may go about contributing to this project:"},
@@ -39,18 +36,12 @@ inquirer.prompt([
      name: "questions",
      message: "Please provide your email address asssociated with this project:"}, 
 ]).then(answers => {
-    console.log(answers);
     var radReadMe = generateMarkdown(answers); 
-    fs.writeFile("generator.md", radReadMe, err => {
+    fs.writeFile("exampleREADME.md", radReadMe, err => {
         if (err) throw err;
         console.log("peep that RAD README!");
     });
 })
-
-// function to write README file
-// function writeToFile(fileName, data) {
-    
-// }
 
 // function to initialize program
 function init() {
