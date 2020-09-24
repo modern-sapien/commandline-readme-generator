@@ -14,7 +14,7 @@ ${data.description}
 * [Questions](#questions)
 
 ## Installation
-${data.install}
+${data.installation}
 
 ## Usage
 ${data.usage}

@@ -1,7 +1,7 @@
-# Cool Project
+# Go To Hell
   
 ## Description
-Coolest project ever
+New Project Baby
 
 # Table of Contents
 * [Description](#description)
@@ -15,16 +15,16 @@ Coolest project ever
 undefined
 
 ## Usage
-DON'T USE THIS EITHER
+There is no usage criteria
 
 ## License
-no license
+mit
 
 ## How to Contribute
 Please reach out to modern-sapien at 
 
 ## How to Test
-don't test
+They don't test it
 
 ## Question? 
 For Questions please contact, joncanales2@gmail.com
